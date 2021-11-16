@@ -23,16 +23,16 @@ const execMongo = async (done) => {
 
 app.get('/', (req, res) => {
 	execMongo(async (db) => {
-	  const users = await db
-	    .collection("usersdata")
-	    .find()
-	    .project({
-	      name: 1,
-	      username: 1,
-	      email: 1,
-	    })
-	    .toArray();
-	  res.json(users);
+		const users = await db
+			.collection('usersdata')
+			.find()
+			.project({
+				name: 1,
+				username: 1,
+				email: 1
+			})
+			.toArray();
+		res.json(users);
 	});
 });
 
