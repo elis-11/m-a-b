@@ -14,9 +14,14 @@ content-type: application/json
 }
 
 ### simple users UPDATE
-PATCH {{url}}/simpleUsers/update/619d83eed2fb430e6e4c376a
+PATCH {{url}}/simpleUsers/update/619e10090862c1bc1af16b75
 content-type: application/json
  
 {
-    "lastName": "Lastname-Changed"
+    "lastName": "Lastname-Changed55555",
+    "firstName": "Elis"
 }
+
+### simple users DELETE
+DELETE {{url}}/simpleUsers/delete/619e10090862c1bc1af16b75
+content-type: application/json
