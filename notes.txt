@@ -1,0 +1,3 @@
+wget -O products.json https://raw.githubusercontent.com/raynaldmo/northwind-mongodb/master/collections/json/products.json
+
+mongoimport --db test --collection nestedUsers --type json --file nestedUsers.json --jsonArray

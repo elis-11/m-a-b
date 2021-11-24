@@ -21,6 +21,6 @@ const nestedUsersSchema = mongoose.Schema({
 },
     { versionKey: false });
  
-const NestedUsersModel = mongoose.model("nesteduser", nestedUsersSchema);
+const NestedUsersModel = mongoose.model("NestedUser", nestedUsersSchema, "nestedUsers");
  
 export default NestedUsersModel;
