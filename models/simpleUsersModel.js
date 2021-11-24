@@ -6,6 +6,6 @@ const simpleUsersSchema = mongoose.Schema({
 },
 { versionKey: false});
  
-const SimpleUsersModel = mongoose.model("simpleuser", simpleUsersSchema);
+const SimpleUsersModel = mongoose.model("Simpleuser", simpleUsersSchema);
  
 export default SimpleUsersModel;
