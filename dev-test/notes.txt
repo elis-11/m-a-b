@@ -1,3 +1,0 @@
-mongoimport --db dev-test --collection persons --type json --file simpleUsers.json --jsonArray
-
-mongoimport --db dev-test --collection simpleUsers --type json --file simpleUsers.json --jsonArray
