@@ -3,16 +3,23 @@
 - start: 'node index' / npm start
 - dev: 'nodemon index' / npm run dev
 - 12:30 INSOMNIA
----------------------
+-------------------
 app.get("/test", (req, res) => {
     res.send("It works")
 })
----------------------
+
+--------------------
 ## 2:
 - ATLAS
 - .env
 - connecting to MongoDB
 - npm i mongoose dotenv
+------------
+## 3:
+- model schema
+------------
+## 4:
+- 
 
 
 

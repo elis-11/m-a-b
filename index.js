@@ -20,4 +20,3 @@ mongoose.connect(process.env.MDB_CONNECT,
     if (err) return console.error(err)
     console.log('Connected to MongoDB');
 })
-
