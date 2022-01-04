@@ -22,6 +22,10 @@ app.get("/test", (req, res) => {
 - ROUTERS
 - INSOMNIA
 - 3:50 insomnia send
+- 8 VALIDATION
+- 9:20 error message (404)
+- 
+
 
 
 
