@@ -3,7 +3,7 @@
 - start: 'node index' / npm start
 - dev: 'nodemon index' / npm run dev
 - 12:30 INSOMNIA
--------------------
+--------------------
 app.get("/test", (req, res) => {
     res.send("It works")
 })
@@ -19,10 +19,12 @@ app.get("/test", (req, res) => {
 - model schema
 ------------
 ## 4:
-- 
+- ROUTERS
+- INSOMNIA
+- 3:50 insomnia send
 
 
 
 
-
+-------------------------------
 ## https://www.youtube.com/watch?v=scYojqjnHzI&list=PLJM1tXwlGdaf57oUx0rIqSW668Rpo_7oU
