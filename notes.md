@@ -43,6 +43,10 @@ app.get("/test", (req, res) => {
 
         console.log(token);
 - 15:35 COOKIES (got data in ATLAS)
+-----------
+## 6:
+- LOG IN
+- 5:15 loged in
 
 
 
