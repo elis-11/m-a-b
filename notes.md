@@ -24,7 +24,12 @@ app.get("/test", (req, res) => {
 - 3:50 insomnia send
 - 8 VALIDATION
 - 9:20 error message (404)
+-----------
+## 5:
+- HASH
+- npm i bcryptjs
 - 
+
 
 
 
