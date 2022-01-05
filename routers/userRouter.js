@@ -35,8 +35,16 @@ router.post("/", async (req, res) => {
     // hash the password
     const salt = await bcrypt.genSalt();
     const passwordHash = await bcrypt.hash(password, salt);
+    // console.log(passwordHash);
 
-    console.log(passwordHash);
+   // 3:30 save a new user account to the database
+
+        const newUser = new User({
+          email, passwordHash
+        })
+        
+        const savedUser = await newUser.save()
+
   } catch (err) {
     console.error(err);
     res.status(500).send();

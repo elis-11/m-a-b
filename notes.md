@@ -28,7 +28,13 @@ app.get("/test", (req, res) => {
 ## 5:
 - HASH
 - npm i bcryptjs
-- 
+-     // hash the password
+    const bcrypt = require("bcryptjs");
+    const salt = await bcrypt.genSalt();
+    const passwordHash = await bcrypt.hash(password, salt);
+    console.log(passwordHash);
+- 3:30 save a new user account to the database
+- 5:03 ATLAS (send new data to the ATLAS )
 
 
 
