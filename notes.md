@@ -36,6 +36,8 @@ app.get("/test", (req, res) => {
 - 3:30 ---save a new user account to the database
 - 5:03 ATLAS (send new data to the ATLAS )
 - 6:05 ---log the user in -- jwt.io
+- npm i jsonwebtoken
+
 
 
 
