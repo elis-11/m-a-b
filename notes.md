@@ -37,7 +37,12 @@ app.get("/test", (req, res) => {
 - 5:03 ATLAS (send new data to the ATLAS )
 - 6:05 ---log the user in -- jwt.io
 - npm i jsonwebtoken
+-       const token = jwt.sign({
+          user: savedUser._id
+        }, process.env.JWT_SECRET)
 
+        console.log(token);
+- 15:35 COOKIES (got data in ATLAS)
 
 
 
