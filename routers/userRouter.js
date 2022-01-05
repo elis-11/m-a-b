@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const User = require("../models/userModel");
 const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken")
 
 router.post("/", async (req, res) => {
   //   res.send("test");
@@ -44,6 +45,10 @@ router.post("/", async (req, res) => {
         })
         
         const savedUser = await newUser.save()
+
+        // log the user in
+
+
 
   } catch (err) {
     console.error(err);

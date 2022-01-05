@@ -22,7 +22,7 @@ app.get("/test", (req, res) => {
 - ROUTERS
 - INSOMNIA
 - 3:50 insomnia send
-- 8 VALIDATION
+- 8 ---VALIDATION
 - 9:20 error message (404)
 -----------
 ## 5:
@@ -33,9 +33,9 @@ app.get("/test", (req, res) => {
     const salt = await bcrypt.genSalt();
     const passwordHash = await bcrypt.hash(password, salt);
     console.log(passwordHash);
-- 3:30 save a new user account to the database
+- 3:30 ---save a new user account to the database
 - 5:03 ATLAS (send new data to the ATLAS )
-
+- 6:05 ---log the user in -- jwt.io
 
 
 
