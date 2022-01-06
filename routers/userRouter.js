@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const User = require("../models/userModel");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const User = require("../models/userModel");
 
 //register
 
@@ -73,7 +73,7 @@ router.post("/", async (req, res) => {
 
 // LOG IN
 
-router.post("/login", async (reg, res) => {
+router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
 
@@ -115,5 +115,13 @@ router.post("/login", async (reg, res) => {
     res.status(500).send();
   }
 });
+
+router.get("/logout", (req, res) => {
+  res.cookie("token", "", {
+    httpOnly: true,
+    expires: new Date(0)
+  })
+  .send()
+})
 
 module.exports = router;

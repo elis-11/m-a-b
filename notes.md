@@ -42,11 +42,15 @@ app.get("/test", (req, res) => {
         }, process.env.JWT_SECRET)
 
         console.log(token);
+- 15:28 delete everything from ATLAS
 - 15:35 COOKIES (got data in ATLAS)
+- 19:20! ATLAS -send access token to the in a cookie
 -----------
 ## 6:
 - LOG IN
-- 5:15 loged in
+- 5:15 login endpoint---loged in
+- 5:40 logout endpoint---CLEAR COOKIES
+- 7:08! INSOMNIA logout endpoint
 
 
 
