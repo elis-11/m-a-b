@@ -58,13 +58,3 @@ app.get("/test", (req, res) => {
 
 -------------------------------
 ## https://www.youtube.com/watch?v=scYojqjnHzI&list=PLJM1tXwlGdaf57oUx0rIqSW668Rpo_7oU
-
-
-const router = require("express").Router();
-
-router.post("/", (req, res) => {
-  console.log(req.body);
-  res.sendStatus(200);
-});
-
-module.exports = router;
