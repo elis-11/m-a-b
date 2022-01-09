@@ -51,8 +51,9 @@ app.get("/test", (req, res) => {
 - 5:15 login endpoint---loged in
 - 5:40 logout endpoint---CLEAR COOKIES
 - 7:08! INSOMNIA logout endpoint
-
-
+- MDB_CONNECT=mongodb+srv://elis:elis@cluster0.gzwcn.mongodb.net/dev?retryWrites=true&w=majority'
+- MDB_CONNECT='mongodb+srv://elis:elis@cluster0.ldv56.mongodb.net/dev?retryWrites=true&w=majority'
+- MDB_CONNECT='mongodb+srv://elis:elis@cluster0.gzwcn.mongodb.net/dev?retryWrites=true&w=majority'
 
 
 
