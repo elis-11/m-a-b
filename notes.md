@@ -7,7 +7,6 @@
 app.get("/test", (req, res) => {
     res.send("It works")
 })
-
 --------------------
 ## 2:
 - ATLAS
@@ -40,7 +39,6 @@ app.get("/test", (req, res) => {
 -       const token = jwt.sign({
           user: savedUser._id
         }, process.env.JWT_SECRET)
-
         console.log(token);
 - 15:28 delete everything from ATLAS
 - 15:35 COOKIES (got data in ATLAS)
@@ -54,8 +52,18 @@ app.get("/test", (req, res) => {
 - MDB_CONNECT=mongodb+srv://elis:elis@cluster0.gzwcn.mongodb.net/dev?retryWrites=true&w=majority'
 - MDB_CONNECT='mongodb+srv://elis:elis@cluster0.ldv56.mongodb.net/dev?retryWrites=true&w=majority'
 - MDB_CONNECT='mongodb+srv://elis:elis@cluster0.gzwcn.mongodb.net/dev?retryWrites=true&w=majority'
+---------
+## 7: 
+- create customer model
+- 4:50 new customer- to create INSOMNIA
+- 7:20 middleware
+- 11:45 npm i cookie-parser
 
 
 
 -------------------------------
 ## https://www.youtube.com/watch?v=scYojqjnHzI&list=PLJM1tXwlGdaf57oUx0rIqSW668Rpo_7oU
+
+----.env--back-------
+MDB_CONNECT=mongodb+srv://elis:elis@cluster0.ldv56.mongodb.net/auth?retryWrites=true&w=majority
+JWT_SECRET=5HD27dhb9boXk8IBIeDHOhUsnnN7yz*^4tuJeL90ne*&
