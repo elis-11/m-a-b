@@ -59,8 +59,9 @@ app.get("/test", (req, res) => {
 - 7:20 middleware
 - 11:45 npm i cookie-parser
 - 16 verify
-- 17:11 stop
-
+- 18 verified.user
+- 21 create new customer- insomnia
+- 22:15 get all customers- insomnia
 
 
 -------------------------------
