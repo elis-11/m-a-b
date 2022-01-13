@@ -1,4 +1,4 @@
-## 1:
+## 1: BACKEND
 - npm i express nodemon -D 
 - start: 'node index' / npm start
 - dev: 'nodemon index' / npm run dev
@@ -49,9 +49,11 @@ app.get("/test", (req, res) => {
 - 5:15 login endpoint---loged in
 - 5:40 logout endpoint---CLEAR COOKIES
 - 7:08! INSOMNIA logout endpoint
-- MDB_CONNECT=mongodb+srv://elis:elis@cluster0.gzwcn.mongodb.net/dev?retryWrites=true&w=majority'
-- MDB_CONNECT='mongodb+srv://elis:elis@cluster0.ldv56.mongodb.net/dev?retryWrites=true&w=majority'
+- MDB_CONNECT=mongodb+srv://elis:elis@cluster0.ldv56.mongodb.net/auth?retryWrites=true&w=majority   // <=this is
+
+- MDB_CONNECT=mongodb+srv://elis:elis@cluster0.gzwcn.mongodb.net/dev?retryWrites=true&w=majority
 - MDB_CONNECT='mongodb+srv://elis:elis@cluster0.gzwcn.mongodb.net/dev?retryWrites=true&w=majority'
+- MDB_CONNECT='mongodb+srv://elis:elis@cluster0.ldv56.mongodb.net/dev?retryWrites=true&w=majority'
 ---------
 ## 7: 
 - create customer model
@@ -62,6 +64,15 @@ app.get("/test", (req, res) => {
 - 18 verified.user
 - 21 create new customer- insomnia
 - 22:15 get all customers- insomnia
+------------
+## 8: FRONTEND
+- npx create-react-app 
+- 5:33 npm i react-router-dom@5
+- 8:40 Router
+- 10 Navbar
+- 
+- 
+
 
 
 -------------------------------
