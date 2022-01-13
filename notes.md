@@ -70,8 +70,14 @@ app.get("/test", (req, res) => {
 - 5:33 npm i react-router-dom@5
 - 8:40 Router
 - 10 Navbar
-- 
-- 
+----------------
+## 9: Register Form
+- register
+- 3:10 register HOOKS
+- 6 submit-register
+- install AXIOS
+- create new USER 
+- 10:15 install CORS into SERVER
 
 
 
