@@ -1,7 +1,7 @@
 const router = require("express").Router();
+const User = require("../models/userModel");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const User = require("../models/userModel");
 
 //register
 
@@ -19,9 +19,9 @@ router.post("/", async (req, res) => {
         .status(400)
         .json({ errorMessage: "Please enter all required fields." });
 
-    if (password.length < 4)
+    if (password.length < 3)
       return res.status(400).json({
-        errorMessage: "Please enter a password of at least 4 characters.",
+        errorMessage: "Please enter a password of at least 3 characters.",
       });
 
     if (password !== passwordVerify)
@@ -61,8 +61,11 @@ router.post("/", async (req, res) => {
 
     // send the token in a HTTP-only cookie
 
-    res.cookie("token", token, {
+    res
+      .cookie("token", token, {
         httpOnly: true,
+        secure: true, // extra
+        sameSite: "none", // extra
       })
       .send();
   } catch (err) {
@@ -106,8 +109,11 @@ router.post("/login", async (req, res) => {
 
     // send the token in a HTTP-only cookie
 
-    res.cookie("token", token, {
+    res
+      .cookie("token", token, {
         httpOnly: true,
+        secure: true,
+        sameSite: "none",
       })
       .send();
   } catch (err) {
@@ -117,11 +123,27 @@ router.post("/login", async (req, res) => {
 });
 
 router.get("/logout", (req, res) => {
-  res.cookie("token", "", {
-    httpOnly: true,
-    expires: new Date(0)
-  })
-  .send()
-})
+  res
+    .cookie("token", "", {
+      httpOnly: true,
+      expires: new Date(0),
+      secure: true,
+      sameSite: "none",
+    })
+    .send();
+});
+
+router.get("/loggedIn", (req, res) => {
+  try {
+    const token = req.cookies.token;
+    if (!token) return res.json(false);
+
+    jwt.verify(token, process.env.JWT_SECRET);
+
+    res.send(true);
+  } catch (err) {
+    res.json(false);
+  }
+});
 
 module.exports = router;

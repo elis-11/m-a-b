@@ -1,0 +1,31 @@
+[
+{
+	"email" : "elis@gmail.com",
+	"passwordHash" : "$2a$10$7mA69w8OUJy38ZN7lW0JgeVg.usSGzspmXSszwGaBLXhKSMl6cgRi",
+	"__v" : 0
+},
+
+{
+	"email" : "ilon@gmail.com",
+	"passwordHash" : "$2a$10$2Axw7Xd9mGBBQTAAZt7n6u6EKN1ib1Te0ldeUSis/3u6Vh5B3ET6G",
+	"__v" : 0
+},
+
+{
+	"email" : "robin@gmail.com",
+	"passwordHash" : "$2a$10$8i/koYKItz9eCR9XDQviW.VXwKCRhFGs9H1/puzFuAtyk0EhJCwVC",
+	"__v" : 0
+},
+
+{
+	"email" : "rob@gmail.com",
+	"passwordHash" : "$2a$10$VvqgR63Xz9wpBzvXAtcSb.LZgiDMITy1y21Du3hUndI5cnsm3qeDO",
+	"__v" : 0
+},
+
+{
+	"email" : "Marlene@gmail.com",
+	"passwordHash" : "$2a$10$IwyBim6QgJ20zVn3D8Eqau1s8Bo9SyXNDenesd9dnktj0l/1XO4vy",
+	"__v" : 0
+}
+]
