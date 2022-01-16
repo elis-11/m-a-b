@@ -78,9 +78,14 @@ app.get("/test", (req, res) => {
 - install AXIOS
 - create new USER 
 - 10:15 install CORS into SERVER
+- REGISTER --doesn't work
+-----------------
+## 10: Login
+----------------
+## 11: Customers
+- login
+16:30 error
 
-
-4:20
 
 
 
