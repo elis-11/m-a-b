@@ -20,13 +20,16 @@ mongoose.connect(
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(` :) Server started on port ${PORT}`));
+app.listen(PORT, () =>  {
+  console.log(` :) Server started on port http://localhost:${PORT}`)
+});
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
     origin: "http://localhost:3000",
+    credentials: true,
   })
 );
 // set up routes 5:17
