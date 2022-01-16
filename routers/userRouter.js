@@ -3,25 +3,22 @@ const User = require("../models/userModel");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-//register
+// register
 
 router.post("/", async (req, res) => {
-  //   res.send("test");
-  // console.log(req.body);
-  // res.sendStatus(200);
   try {
     const { email, password, passwordVerify } = req.body;
 
-    //  validate
+    // validation
 
     if (!email || !password || !passwordVerify)
       return res
         .status(400)
         .json({ errorMessage: "Please enter all required fields." });
 
-    if (password.length < 3)
+    if (password.length < 6)
       return res.status(400).json({
-        errorMessage: "Please enter a password of at least 3 characters.",
+        errorMessage: "Please enter a password of at least 6 characters.",
       });
 
     if (password !== passwordVerify)
@@ -36,11 +33,11 @@ router.post("/", async (req, res) => {
       });
 
     // hash the password
+
     const salt = await bcrypt.genSalt();
     const passwordHash = await bcrypt.hash(password, salt);
-    // console.log(passwordHash);
 
-    // 3:30 save a new user account to the database
+    // save a new user account to the db
 
     const newUser = new User({
       email,
@@ -49,7 +46,7 @@ router.post("/", async (req, res) => {
 
     const savedUser = await newUser.save();
 
-    // sing the token
+    // sign the token
 
     const token = jwt.sign(
       {
@@ -57,15 +54,14 @@ router.post("/", async (req, res) => {
       },
       process.env.JWT_SECRET
     );
-    // console.log(token);
 
     // send the token in a HTTP-only cookie
 
     res
       .cookie("token", token, {
         httpOnly: true,
-        secure: true, // extra
-        sameSite: "none", // extra
+        secure: true,
+        sameSite: "none",
       })
       .send();
   } catch (err) {
@@ -74,7 +70,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// LOG IN
+// log in
 
 router.post("/login", async (req, res) => {
   try {
@@ -98,7 +94,7 @@ router.post("/login", async (req, res) => {
     if (!passwordCorrect)
       return res.status(401).json({ errorMessage: "Wrong email or password." });
 
-    // sing the token
+    // sign the token
 
     const token = jwt.sign(
       {

@@ -80,6 +80,9 @@ app.get("/test", (req, res) => {
 - 10:15 install CORS into SERVER
 
 
+4:20
+
+
 
 -------------------------------
 ## https://www.youtube.com/watch?v=scYojqjnHzI&list=PLJM1tXwlGdaf57oUx0rIqSW668Rpo_7oU
