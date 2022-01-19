@@ -84,8 +84,14 @@ app.get("/test", (req, res) => {
 ----------------
 ## 11: Customers
 - login
-16:30 error
-
+- 16:30 error
+- 24:39 USEHISTORY  
+- auth context
+------------
+## 12: Rendering Customers
+- 12 login customer- doesn't work
+---------------
+## 13: Deploying the backend
 
 
 
