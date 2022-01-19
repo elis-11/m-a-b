@@ -98,6 +98,15 @@ app.get("/test", (req, res) => {
 -------------------------------
 ## https://www.youtube.com/watch?v=scYojqjnHzI&list=PLJM1tXwlGdaf57oUx0rIqSW668Rpo_7oU
 
-----.env--back-------
-MDB_CONNECT=mongodb+srv://elis:elis@cluster0.ldv56.mongodb.net/auth?retryWrites=true&w=majority
-JWT_SECRET=5HD27dhb9boXk8IBIeDHOhUsnnN7yz*^4tuJeL90ne*&
+<!-- ----.env--back------- -->
+<!-- MDB_CONNECT=mongodb+srv://elis:elis@cluster0.ldv56.mongodb.net/auth?retryWrites=true&w=majority -->
+<!-- JWT_SECRET=5HD27dhb9boXk8IBIeDHOhUsnnN7yz*^4tuJeL90ne*& -->
+
+---------------
+<!-- ORIGIN_URL=http://localhost:3000 -->
+<!-- MDB_CONNECT=mongodb+srv://elis:elis@cluster0.ldv56.mongodb.net/auth?retryWrites=true&w=majority -->
+<!-- MONGOURI=mongodb://localhost:27017/auth -->
+<!-- PORT=5000 -->
+<!-- JWT_SECRET=secret -->
+<!-- SALT=8 -->
+
