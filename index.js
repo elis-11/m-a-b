@@ -18,7 +18,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://mern-auth-template-tutorial.netlify.app",
+      "https://elis-mern-auth.netlify.app",
     ],
     credentials: true,
   })
