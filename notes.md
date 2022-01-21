@@ -91,7 +91,7 @@ app.get("/test", (req, res) => {
 ---
 ## 14: Deploying the client
 # https://elis-mern-auth.netlify.app
-- 4:30
+- 16 _redirects file- netlify-404
 ---
 
 
@@ -102,3 +102,14 @@ app.get("/test", (req, res) => {
 
 https://mern-auth-bk.herokuapp.com/
 https://elis-mern-auth.netlify.app
+
+---
+# --start Previev notes.md with
+- S || V
+
+---
+# --start server with--
+- node index
+- nonemon index
+- npm run dev
+- npm start
